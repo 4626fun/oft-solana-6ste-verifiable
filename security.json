@@ -1,9 +1,12 @@
 {
   "name": "4626 Share Mesh OFT",
+  "logo": "https://4626.fun/assets/logo-mark-opaque-1024.png",
+  "description": "LayerZero V2 OFT bridging 4626 vault share tokens between Base and Solana.",
   "project_url": "https://4626.fun",
-  "contacts": "email:hello@4626.fun",
+  "contacts": ["email:hello@4626.fun"],
   "policy": "https://github.com/4626fun/oft-solana-6ste-verifiable/blob/main/SECURITY.md",
-  "preferred_languages": "en",
+  "preferred_languages": ["en"],
   "source_code": "https://github.com/4626fun/oft-solana-6ste-verifiable",
-  "source_release": "afbb10304d999df7aa81c414658c9226896606f4"
+  "source_release": "afbb10304d999df7aa81c414658c9226896606f4",
+  "version": "1.0.0"
 }
