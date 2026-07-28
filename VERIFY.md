@@ -13,4 +13,8 @@ solana-verify verify-from-repo -um \
   -- --tools-version v1.51
 ```
 
-Expected program hash: `ecd321cd2b368afd95917d6d84c30c7bb0fb82cbd507206b328bcf5db4b458a6`
+Previous verified hash (pre `admin_set_token_mint_authority`): `ecd321cd2b368afd95917d6d84c30c7bb0fb82cbd507206b328bcf5db4b458a6`
+
+Pending upgrade hash (local `cargo-build-sbf --tools-version v1.51` sha256 of `oft.so`): `afc17fa3ab734466458228aae14ee446e9c42d0e851da2017ca16f2068c451b9`
+
+Re-run solana-verify after mainnet upgrade and replace this section with the on-chain executable hash.

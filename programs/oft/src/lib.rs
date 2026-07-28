@@ -62,6 +62,15 @@ pub mod oft {
         WithdrawFee::apply(&mut ctx, &params)
     }
 
+    /// Transfer SPL Token-2022 mint authority away from the OFT Store PDA (admin only).
+    /// Intended for one-shot Metaplex metadata create, then restore mint authority to the store.
+    pub fn admin_set_token_mint_authority(
+        mut ctx: Context<AdminSetTokenMintAuthority>,
+        params: AdminSetTokenMintAuthorityParams,
+    ) -> Result<()> {
+        AdminSetTokenMintAuthority::apply(&mut ctx, &params)
+    }
+
     // ============================== Public ==============================
 
     pub fn quote_oft(ctx: Context<QuoteOFT>, params: QuoteOFTParams) -> Result<QuoteOFTResult> {

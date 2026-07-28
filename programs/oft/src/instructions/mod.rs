@@ -1,3 +1,4 @@
+pub mod admin_set_token_mint_authority;
 pub mod init_oft;
 pub mod lz_receive;
 pub mod lz_receive_types;
@@ -9,6 +10,7 @@ pub mod set_pause;
 pub mod set_peer_config;
 pub mod withdraw_fee;
 
+pub use admin_set_token_mint_authority::*;
 pub use init_oft::*;
 pub use lz_receive::*;
 pub use lz_receive_types::*;
